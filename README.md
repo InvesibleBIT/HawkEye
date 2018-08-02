@@ -1,5 +1,5 @@
 
-![alt text](HawkEye/w-he-logo-text.jpg)
+![alt text](https://github.com/InvesibleBIT/HawkEye/blob/master/w-he-logo-text.jpg)
 
 
 ## Inspiration
