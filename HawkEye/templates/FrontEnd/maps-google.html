@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!-- Title -->
+        <title>Modern | Maps - Google Maps</title>
+        
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="Admin Dashboard Template" />
+        <meta name="keywords" content="admin,dashboard" />
+        <meta name="author" content="Steelcoders" />
+        
+        <!-- Styles -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+        <link href="assets/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet"/>
+        <link href="assets/plugins/uniform/css/uniform.default.min.css" rel="stylesheet"/>
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/fontawesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/line-icons/simple-line-icons.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/offcanvasmenueffects/css/menu_cornerbox.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/waves/waves.min.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/3d-bold-navigation/css/style.css" rel="stylesheet" type="text/css"/>	
+        <link href="assets/plugins/slidepushmenus/css/component.css" rel="stylesheet" type="text/css"/>
+         
+        <!-- Theme Styles -->
+        <link href="assets/css/modern.min.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUz441ZPuYxUQZmuqScBXN1hIXrFFPu6U&sensor=false"></script>
+        <script src="assets/js/pages/heatmap.js"></script>
+        <script src="assets/js/pages/gmaps-heatmap.js"></script>
+        <script type="text/javascript" src="assets/js/pages/data.json"></script>
+        <script src="assets/plugins/3d-bold-navigation/js/modernizr.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/snap.svg-min.js"></script>
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body class="page-header-fixed page-sidebar-fixed">
+        <div class="overlay"></div>
+   
+        <main class="page-content content-wrap full-height">
+                <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="sidebar-pusher">
+                                <a href="javascript:void(0);" class="waves-effect waves-button waves-classic push-sidebar">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </div>
+                            <div class="logo-box">
+                                <a href="index.html" class="logo-text"><span>Hawk Eye</span></a>
+                            </div><!-- Logo Box -->
+                            <div class="search-button">
+                                <a href="javascript:void(0);" class="waves-effect waves-button waves-classic show-search"><i class="fa fa-search"></i></a>
+                            </div>
+                            <div class="topmenu-outer">
+                                <div class="top-menu">
+                                    <ul class="nav navbar-nav navbar-left">
+                                        <li>		
+                                            <a href="javascript:void(0);" class="waves-effect waves-button waves-classic sidebar-toggle"><i class="fa fa-bars"></i></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="nav navbar-nav navbar-right">
+                                      
+                                       
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic" data-toggle="dropdown"><i class="fa fa-bell"></i><span class="badge badge-danger pull-right">3</span></a>
+                                            <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+                                                <li><p class="drop-title">We detacted 3 issues !</p></li>
+                                                <li class="dropdown-menu-list slimscroll tasks">
+                                                    <ul class="list-unstyled">
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="task-icon badge badge-success"><i class="icon-user"></i></div>
+                                                                <span class="badge badge-roundless badge-default pull-right">1min ago</span>
+                                                                <p class="task-details">High trafic at Kink Abdalaziz Gate</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="task-icon badge badge-danger"><i class="icon-energy"></i></div>
+                                                                <span class="badge badge-roundless badge-default pull-right">1h ago</span>
+                                                                <p class="task-details">Very High trafic at Mina</p>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="task-icon badge badge-info"><i class="icon-heart"></i></div>
+                                                                <span class="badge badge-roundless badge-default pull-right">6h ago</span>
+                                                                <p class="task-details">AlSafa & AlMarwa Area Almost Full</p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="drop-all"><a href="#" class="text-center">All Notifications</a></li>
+                                            </ul>
+                                        </li>
+                                       
+                                       
+        
+                                        <li>		
+                                            <a href="javascript:void(0);" class="waves-effect waves-button waves-classic toggle-fullscreen"><i class="fa fa-expand"></i></a>
+                                        </li>
+                                     
+                                    </ul><!-- Nav -->
+                                </div><!-- Top Menu -->
+                            </div>
+                        </div>
+                    </div><!-- Navbar -->
+                    <div class="page-sidebar sidebar">
+                            <div class="page-sidebar-inner slimscroll">
+                                <div class="sidebar-header">
+                                    <div class="sidebar-profile">
+                                        <a href="javascript:void(0);" id="profile-menu-link">
+                                                <div class="sidebar-profile-image">
+                                                        <img src="assets/images/abdullah.jpg" class="img-circle img-responsive" alt="">
+                                                    </div>
+                                                    <div class="sidebar-profile-details">
+                                                        <span>Abdullah Mohammed<br><small>Traffic Officer</small></span>
+                                                    </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <ul class="menu accordion-menu">
+                                    <li ><a href="index.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-home"></span><p>Dashboard</p></a></li>
+            
+                                   
+                                    <li class="active"><a href="maps-google.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-map-marker"></span><p>Maps</p></a>
+            
+                                    </li>
+                                    <li ><a href="videosPage.html" class="waves-effect waves-button"><span class="menu-icon glyphicon glyphicon-facetime-video"></span><p>Video</p></a>
+            
+                                </ul>
+                            </div><!-- Page Sidebar Inner -->
+                        </div><!-- Page Sidebar -->
+            <div class="page-inner full-height">
+                <div id="map-canvas" style="height:100%; width :100%"></div>
+                <div class="page-footer">
+                    <p class="no-s">2018 &copy; HawkEye System</p>
+                </div>
+            </div><!-- Page Inner -->
+        </main><!-- Page Content -->
+        <nav class="cd-nav-container" id="cd-nav">
+            <header>
+                <h3>Navigation</h3>
+                <a href="#0" class="cd-close-nav">Close</a>
+            </header>
+            <ul class="cd-nav list-unstyled">
+                <li class="cd-selected" data-menu="index">
+                    <a href="javsacript:void(0);">
+                        <span>
+                            <i class="glyphicon glyphicon-home"></i>
+                        </span>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li data-menu="profile">
+                    <a href="javsacript:void(0);">
+                        <span>
+                            <i class="glyphicon glyphicon-user"></i>
+                        </span>
+                        <p>Profile</p>
+                    </a>
+                </li>
+                <li data-menu="inbox">
+                    <a href="javsacript:void(0);">
+                        <span>
+                            <i class="glyphicon glyphicon-envelope"></i>
+                        </span>
+                        <p>Mailbox</p>
+                    </a>
+                </li>
+                <li data-menu="#">
+                    <a href="javsacript:void(0);">
+                        <span>
+                            <i class="glyphicon glyphicon-tasks"></i>
+                        </span>
+                        <p>Tasks</p>
+                    </a>
+                </li>
+                <li data-menu="#">
+                    <a href="javsacript:void(0);">
+                        <span>
+                            <i class="glyphicon glyphicon-cog"></i>
+                        </span>
+                        <p>Settings</p>
+                    </a>
+                </li>
+                <li data-menu="calendar">
+                    <a href="javsacript:void(0);">
+                        <span>
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                        <p>Calendar</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="cd-overlay"></div>
+	
+
+        <!-- Javascripts -->
+        <script>
+
+
+// map center
+//21.4134749,39.8973725
+var myLatlng = new google.maps.LatLng(21.4134749, 39.8973725);
+// map options,
+var myOptions = {
+  zoom: 15,
+  center: myLatlng
+};
+// standard map
+map = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+// heatmap layer
+heatmap = new HeatmapOverlay(map,
+  {
+    // radius should be small ONLY if scaleRadius is true (or small radius is intended)
+    "radius": 20,
+    "maxOpacity": 0.6,
+    // scales the radius based on map zoom
+    "scaleRadius": false,
+    // if set to false the heatmap uses the global maximum for colorization
+    // if activated: uses the data maximum within the current map boundaries
+    //   (there will always be a red spot with useLocalExtremas true)
+    "useLocalExtrema": false,
+    // which field name in your data represents the latitude - default "lat"
+    latField: 'lat',
+    // which field name in your data represents the longitude - default "lng"
+    lngField: 'lng',
+    // which field name in your data represents the data value - default "value"
+    valueField: 'count'
+  }
+);
+
+// get data from json file
+var mydata = JSON.parse(data);
+var testData = {
+  max: 40,
+  data: mydata
+};
+console.log(testData.data)
+heatmap.setData(testData);
+
+//update the heatmap from update.json file every 5 sec
+setInterval(updateData, 5000);
+function updateData(){
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      testData.data=JSON.parse(this.responseText)
+      heatmap.setData(testData)
+    }
+  };
+  xmlhttp.open("GET", "update.json", true);
+  xmlhttp.send();
+}
+
+</script>
+        <script src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/plugins/pace-master/pace.min.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+        <script src="assets/plugins/uniform/jquery.uniform.min.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/classie.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/main.js"></script>
+        <script src="assets/plugins/waves/waves.min.js"></script>
+        <script src="assets/plugins/3d-bold-navigation/js/main.js"></script>
+        <script src="assets/js/modern.min.js"></script>
+
+        
+    </body>
+</html>
